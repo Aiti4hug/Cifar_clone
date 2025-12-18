@@ -23,6 +23,6 @@ COPY model.pth .
 
 EXPOSE 8000
 
-CMD ["uvicorn", "CifarModel.main:cifar_app", "--host", "0.0.0.0", "--port", "8000", "--workers", "2"]
+CMD ["uvicorn", "main:cifar_app", "--host", "0.0.0.0", "--port", "8000", "--workers", "2"]
 
 
